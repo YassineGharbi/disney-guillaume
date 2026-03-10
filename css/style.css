@@ -966,7 +966,8 @@ table {
   }
 
   table {
-    border-spacing: 0;
+      border-spacing: 8px 0;    /* espacement horizontal entre les td */
+  border-collapse: separate; /* indispensable pour que border-spacing fonctionne */
     width: 50%;
   }
 
@@ -1044,6 +1045,10 @@ table {
 /* ========================================
    MEDIA QUERIES - PETITS ÉCRANS (max 500px)
    ======================================== */
+table {
+  border-spacing: 6px 0;
+  border-collapse: separate;
+}
 
 @media (max-width: 500px) {
   .bouton_tel>td {
@@ -1057,7 +1062,7 @@ table {
     border-radius: 20px;
     font-size: 0.8em;
     font-weight: bold;
-    vertical-align: middle; */
+    vertical-align: middle;
   }
 
   .footer_container {
