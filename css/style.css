@@ -1055,9 +1055,9 @@ table {
     background-color: #215e66;
     border-top: 1px solid #2c2e35;
     border-bottom: transparent;
-    padding: 10px 10px 10px;
+    /* padding: 10px 10px 10px; */
     min-width: 110px;
-    height: 80px;
+    /* height: 80px; */
     /* background-clip: content-box; */
     border-radius: 20px;
     font-size: 0.8em;
