@@ -1,0 +1,1067 @@
+/* ========================================
+   STYLES GÉNÉRAUX
+   ======================================== */
+
+* {
+  font-family: Inspire, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(223, 223, 223);
+  font-size: 18px;
+  line-height: 25px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #040714;
+  margin: 0;
+}
+
+/* ========================================
+   HEADER & NAVIGATION
+   ======================================== */
+
+.header_disney {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 30px;
+}
+
+#id_mail {
+  padding: 10px;
+  height: 48px;
+  width: 400px;
+  border: none;
+  border-radius: 3px 0 0 3px;
+  font-size: 0.75em;
+  background-color: #2c2e35;
+  margin: 0;
+}
+
+.btn_identification {
+  text-decoration: none;
+  background-color: #040404ac;
+  display: inline-block;
+  padding: 10px 15px;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+/* ========================================
+   PAGE D'ACCUEIL
+   ======================================== */
+
+.page_accueil {
+  background-image: url(../img/original_2.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+}
+
+.texte_central {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  margin-top: 70px;
+  flex: 1;
+}
+
+.texte_central h1 {
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 1em;
+  margin: 0;
+}
+
+.engagement {
+  font-size: 1.2em;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.instruction {
+  font-size: 0.75em;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+}
+
+.formulaire {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  width: min(92%, 640px);
+  margin: 20px auto;
+}
+
+#id_mail {
+  padding: 10px;
+  height: 48px;
+  width: 100%;
+  max-width: 400px;
+  min-width: 0;
+  flex: 1 1 auto;
+  border: none;
+  border-radius: 3px 0 0 3px;
+  font-size: 0.75em;
+  background-color: #2c2e35;
+  margin: 0;
+}
+
+.btn_incription {
+  background-color: #02d6e8;
+  border: none;
+  font-size: 16px;
+  color: #02172a;
+  padding: 8px 30px;
+  white-space: nowrap;
+  font-weight: 450;
+  border-radius: 0 3px 3px 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.offre {
+  font-size: 0.8em;
+  font-weight: 200;
+}
+
+.note_bas {
+  font-size: 0.6em;
+  line-height: 0.4em;
+  font-weight: 100;
+}
+
+.fleche {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+}
+
+.fleche a {
+  font-size: 2.2em;
+  text-decoration: none;
+}
+
+.fleche:hover {
+  animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+/* ========================================
+   SECTION DISNEY
+   ======================================== */
+
+.section_disney {
+  background-image: url(../img/original_4.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.section_disney h2 {
+  text-align: left;
+  margin: 0;
+  font-size: 1.8em;
+  line-height: 1.1;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.text_disney {
+  font-size: 0.9em;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+}
+
+.copy {
+  font-size: 0.8em;
+  font-weight: 100;
+  margin-top: 40px;
+}
+
+.div_disney {
+  max-width: 600px;
+  padding: 0 50px;
+  transform: translate(40px, -150px);
+}
+
+/* ========================================
+   TABLEAU DES ABONNEMENTS
+   ======================================== */
+
+.titre_abonnement {
+  text-align: center;
+  font-size: 1.7em;
+  margin-bottom: 150px;
+}
+
+.bouton_tel,
+.prix_tel {
+  display: none;
+}
+
+.text_abo_tel {
+  display: none;
+}
+
+table,
+td {
+  border-bottom: 1px solid #2c2e35;
+  border-collapse: collapse;
+
+  text-align: center;
+  font-weight: 200;
+  font-size: 0.8em;
+  margin: 0 auto;
+}
+
+th {
+  border-bottom: 1px solid #2c2e35;
+  border-collapse: collapse;
+  font-weight: 200;
+  font-size: 0.8em;
+  text-align: left;
+}
+
+table,
+tbody,
+td,
+th {
+  padding: 25px 0px;
+}
+
+table {
+  width: 70%;
+}
+
+.fin {
+  background-color: #292a2ea9;
+}
+
+.prix {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.trait {
+  font-size: 2.7em;
+  color: #37383f;
+}
+
+.coche {
+  font-size: 1.3em;
+  color: #ffffff;
+}
+
+.note_bas_tableau {
+  text-align: left;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 150px;
+}
+
+.note_bas_tableau p {
+  font-size: 0.7em;
+  font-weight: 100;
+  line-height: 1.4em;
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.note_bas_tableau p+p {
+  margin-top: 8px;
+}
+
+.note_bas_tableau p a {
+  font-size: 1em;
+  line-height: inherit;
+  font-weight: inherit;
+}
+
+/* ========================================
+   SECTION PUBLICITÉ & BÉNÉFICES
+   ======================================== */
+
+.pub {
+  align-items: center;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.pub h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.pub p {
+  font-size: 0.8em;
+  font-weight: 100;
+  margin: 0;
+  padding: 20px;
+}
+
+.image_pub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image_pub img {
+  margin: 0 auto;
+  height: auto;
+  width: 100%;
+  max-width: 1300px;
+}
+
+.benef_ligne {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  height: auto;
+  padding-top: 24px;
+}
+
+.benef_item {
+  text-align: center;
+  width: 300px;
+}
+
+/* ========================================
+   SECTION FAQ
+   ======================================== */
+
+.faq {
+  margin-bottom: 150px;
+}
+
+.faq h3 {
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.contenu_faq .faq_item {
+  background-color: #13151d;
+  margin: 0 0 10px 40px;
+  width: 90%;
+}
+
+.contenu_faq p {
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenu_faq .faq_question {
+  cursor: pointer;
+}
+
+.contenu_faq .faq_reponse {
+  display: none;
+  margin-top: 0;
+  padding-top: 0px;
+  line-height: 1.5;
+  background-color: transparent;
+  padding-bottom: 10px;
+}
+
+.contenu_faq .faq_reponse p {
+  font-size: 0.85em;
+  margin: 0;
+  padding: 5 20px;
+}
+
+.faq_question {
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.contenu_faq .faq_reponse li {
+  font-size: 0.85em;
+  padding: 5px;
+  margin-left: 30px;
+}
+
+.contenu_faq .faq_reponse .disclaimer {
+  font-size: 0.6em;
+  line-height: 1.45;
+}
+
+.contenu_faq .faq_reponse ul {
+  margin: auto;
+}
+
+.contenu_faq .faq_item.active .faq_reponse {
+  display: block;
+}
+
+.contenu_faq .faq_item.active .faq_question {
+  padding-bottom: 8px;
+}
+
+.contenu_faq .icon {
+  margin-left: 16px;
+  font-size: 1.8em;
+}
+
+.contenu_faq .faq_item.active .icon {
+  font-size: 1.9em;
+  line-height: 1;
+  display: inline-block;
+  transform: scaleX(1.6);
+}
+
+/* ========================================
+   SECTION APPAREILS
+   ======================================== */
+
+.appareil {
+  margin-bottom: 150px;
+}
+
+.appareil h3 {
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.appareil ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.appareil li {
+  text-align: center;
+  font-size: 0.8em;
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+}
+
+.appareil_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.appareil_item h3 {
+  text-align: center;
+  margin: 0 auto 12px;
+  font-size: 1.2em;
+}
+
+.appareil_item ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.appareil_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 50px;
+  width: 95%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.appareil_icon {
+  width: 100%;
+  height: auto;
+  margin: 0 auto 20px;
+}
+
+/* ========================================
+   FOOTER
+   ======================================== */
+
+.logo_disney_bas {
+  width: 120px;
+}
+
+.footer_logo {
+  text-align: center;
+}
+
+.footer_logo img {
+  width: 80px;
+}
+
+.footer_liens>ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 16px;
+  margin: 10px auto;
+  padding: 0;
+}
+
+.footer_liens li,
+.footer_liens a {
+  font-size: 0.9em;
+  font-weight: 100;
+}
+
+.footer_liens a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.language_item {
+  position: relative;
+}
+
+.language_liste {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin: 0;
+  padding: 8px 30px;
+  list-style: none;
+  background-color: #040714;
+  border: 1px solid #2c2e35;
+  z-index: 10;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.language_liste a {
+  white-space: nowrap;
+}
+
+.language_item:has(.planete:hover) .language_liste,
+.language_item:has(.language_liste:hover) .language_liste {
+  display: flex;
+}
+
+.language_toggle:hover+.language_liste,
+.language_item:hover .language_liste {
+  display: flex;
+}
+
+.footer_liens a img {
+  height: 24px;
+  width: auto;
+  display: block;
+}
+
+.planete {
+  filter: invert(1);
+}
+
+.arrow_language {
+  filter: invert(1);
+}
+
+.copyright {
+  margin-top: 20px;
+}
+
+.copyright p {
+  text-align: center;
+  font-size: 0.7em;
+  font-weight: 100;
+  margin: 0;
+}
+
+/* ========================================
+   MEDIA QUERIES - TABLETTE (769px - 1024px)
+   ======================================== */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .fleche {
+    position: static;
+  }
+
+  table {
+    width: 95%;
+  }
+
+  .texte_central {
+    margin-top: 190px;
+  }
+
+  .section_disney {
+    background-size: 100% auto;
+    background-position: right center;
+    background-color: #040714;
+    min-height: 70vh;
+  }
+
+  .div_disney {
+    margin-top: 170px;
+    max-width: 600px;
+    padding: 0px 250px 0px 0px;
+  }
+
+  .titre_abonnement {
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+
+  .bouton_tel,
+  .prix_tel {
+    display: table-row;
+  }
+
+  .bouton_tel>th {
+    border-bottom: transparent;
+  }
+
+  .bouton_tel>td {
+    background-color: #215e66;
+    border-top: 1px solid #2c2e35;
+    border-bottom: transparent;
+    padding: 10px 14px 6px;
+    min-width: 170px;
+    background-clip: content-box;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+  }
+
+  .bouton_tel>.pre {
+    background-color: #02d6e8;
+    color: black;
+    font-weight: 700;
+  }
+
+  .prix_tel>td {
+    border-bottom: 1px solid white;
+    padding-top: 4px;
+  }
+
+  .prix_tel>th {
+    border: transparent;
+  }
+
+  .note_bas_tableau {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 70px;
+  }
+
+  .pub h2 {
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  .appareil_container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+
+  .benef_ligne {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+
+  .benef_item {
+    width: auto;
+    flex: 1;
+    max-width: 280px;
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+
+  .benef_item h3 {
+    font-size: 1.3em;
+    line-height: 1em;
+    font-weight: bold;
+  }
+
+  .faq h3 {
+    margin-top: 0px;
+    font-size: 2.3em;
+    font-weight: bold;
+  }
+
+  .appareil>h3 {
+    margin-top: 0px;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  .appareil_item h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  .footer_liens>ul {
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    justify-content: center;
+  }
+
+  .footer_liens li {
+    white-space: normal;
+  }
+}
+
+/* ========================================
+   MEDIA QUERIES - DESKTOP (1025px et +)
+   ======================================== */
+
+@media (min-width: 1025px) {
+  .appareil_container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+}
+
+/* ========================================
+   MEDIA QUERIES - MOBILE (max 768px)
+   ======================================== */
+
+@media (max-width: 768px) {
+  .titre_abonnement {
+    font-size: 3em;
+    margin-bottom: 40px;
+    font-weight: bold;
+    line-height: 1em;
+  }
+
+  .texte_central h1,
+  .pub h2,
+  .faq h3,
+  .appareil h3 {
+    font-size: 3em;
+    line-height: 1em;
+    font-weight: bold;
+  }
+
+  .appareil_item {
+    font-size: 1.7em;
+  }
+
+  .appareil_item ul {
+    font-size: 0.7em;
+    font-weight: bold;
+  }
+
+  .benef_item h3 {
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.4em;
+  }
+
+  .page_accueil {
+    background-position: center top;
+    background-size: 100%;
+    background-color: #040714;
+  }
+
+  .section_disney {
+    background-image: none !important;
+    background-color: #040714 !important;
+    justify-content: center;
+  }
+
+  .div_disney {
+    transform: none;
+    max-width: 100%;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .section_disney h2,
+  .text_disney,
+  .copy {
+    text-align: center;
+  }
+
+  .text_disney br {
+    display: none;
+  }
+
+  .section_disney h2 {
+    font-size: 3em;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 40px;
+  }
+
+  .section_disney .text_disney {
+    font-size: 2em;
+    line-height: 1.3em;
+  }
+
+  .formulaire {
+    flex-direction: column;
+    gap: 10px;
+    width: min(92%, 460px);
+  }
+
+  #id_mail {
+    max-width: none;
+    box-sizing: border-box;
+    border-radius: 3px;
+    height: auto;
+    min-height: 56px;
+    padding: 14px 12px;
+  }
+
+  .btn_incription {
+    width: 100%;
+    border-radius: 3px;
+    min-height: 56px;
+    padding: 14px 16px;
+  }
+
+  .offre {
+    font-size: 1.4em;
+    line-height: 1.4;
+    margin: 12px auto 0;
+    max-width: min(92%, 660px);
+    text-align: center;
+  }
+
+  .note_bas {
+    font-size: 0.9em;
+    line-height: 1.35;
+    margin: 20px auto 0;
+    max-width: min(92%, 660px);
+    text-align: center;
+  }
+
+  .note_bas+.note_bas {
+    margin-top: 2px;
+  }
+
+  .fleche {
+    position: static;
+    margin-top: 14px;
+  }
+
+  .fleche a {
+    display: inline-block;
+    font-size: 1.8em;
+    line-height: 1;
+  }
+
+  .img_tel {
+    background-image: url(../img/original_3.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: min(100%, 560px);
+    height: 450px;
+    margin: 90px auto 0;
+  }
+
+  .benef_ligne {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .benef_item {
+    width: min(90%, 500px);
+  }
+
+  .benef_item p {
+    font-size: 1.3em;
+    line-height: 1.4em;
+  }
+
+  .bouton_tel,
+  .prix_tel {
+    display: table-row;
+  }
+
+  .bouton_tel>th {
+    border-bottom: transparent;
+  }
+
+  .bouton_tel>td {
+    background-color: #215e66;
+    border-top: 1px solid #2c2e35;
+    border-bottom: transparent;
+    padding: 10px 14px 6px;
+    min-width: 170px;
+    background-clip: content-box;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+  }
+
+  .bouton_tel>.pre {
+    background-color: #02d6e8;
+    color: black;
+    font-weight: 700;
+  }
+
+  .prix_tel>td {
+    border-bottom: 1px solid white;
+    padding-top: 4px;
+  }
+
+  .text_abo_tel {
+    display: table-row;
+  }
+
+  .text_abo_tel>td {
+    border-bottom: transparent;
+    padding: 10px 4px 10px;
+  }
+
+  table td {
+    padding: 0px 0px 15px;
+  }
+
+  table {
+    border-spacing: 0;
+    width: 50%;
+  }
+
+  tbody th {
+    display: none;
+  }
+
+  .note_bas_tableau {
+    max-width: 80%;
+    padding-bottom: 70px;
+  }
+
+  .fin {
+    background-color: transparent;
+  }
+
+  .contenu_faq .faq_item {
+    margin: 0 0 10px 40px;
+    width: 85%;
+    margin-right: 40px;
+  }
+
+  .appareil_container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    width: 95%;
+  }
+
+  .appareil_item {
+    padding: 0 8px;
+  }
+
+  .appareil_icon {
+    width: 100%;
+  }
+
+  .appareil_item h3 {
+    font-size: 1em;
+    margin: 0 auto 8px;
+  }
+
+  .appareil li {
+    font-size: 0.75em;
+  }
+
+  .footer_liens>ul {
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    justify-content: center;
+  }
+
+  .footer_liens li {
+    white-space: normal;
+  }
+
+  .note_bas_tableau {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 70px;
+  }
+
+  .faq_question {
+    font-size: 1.2em;
+  }
+
+  .contenu_faq .icon {
+    font-size: 3em;
+  }
+
+  .footer_container {
+    padding: 0px 80px 20px;
+  }
+}
+
+/* ========================================
+   MEDIA QUERIES - PETITS ÉCRANS (max 500px)
+   ======================================== */
+
+@media (max-width: 500px) {
+  .bouton_tel>td {
+    background-color: #215e66;
+    border-top: 1px solid #2c2e35;
+    border-bottom: transparent;
+    padding: 10px 10px 10px;
+    min-width: 110px;
+    min-height: 80px;
+    /* background-clip: content-box; */
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+    /* vertical-align: middle; */
+  }
+
+  .footer_container {
+    padding: 0px 20px 20px;
+  }
+}
